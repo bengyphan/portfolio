@@ -25,24 +25,27 @@
 
 <!-- start body element -->
 <body>
-<div class="container">
-	<nav class="nav navbar-dark bg-dark flex-column align-items-end">
-		<a href="#" class="navbar-brand align-self-start">Bengy</a>
-		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
-		
-		<div class="navbar collapse navbar-collapse flex-column align-items-end" id="myNavbar">
-			<a href="" class="nav-link">About</a>
-			<a href="" class="nav-link">Resume</a>
-			<a href="" class="nav-link">Contact</a>
-		</div>
-	</nav>
+<div class="navbar"></div>
+<div class="burger">
+	<div class="x"></div>
+	<div class="y"></div>
+	<div class="z"></div>
+</div>
+<div class="menu">
+	<ul>
+		<img id="profile" src="img/profile.jpg" alt="Picture of Me">
+		<li><a href="">About</a></li>
+		<li><a href="">Resume</a></li>
+		<li><a href="">Projects</a></li>
+		<li><a href="">Contact</a></li>
+	</ul>
+</div>
 </div>
 
 <section id="header">
 	<div class="container">
-		<div class="jumbotron text-center">
-			<h1 class="display-2">Hello, there!</h1>
-			<h2 class="display-4">Bengy Phan</h2>
+		<div class="jumbotron text-center mt-3">
+			<h1 class="display-4">Hi! Nice to meet you!<br>My name's Bengy.</h1>
 			<p class="lead">Web Developer</p>
 		</div>
 	</div>
@@ -51,9 +54,12 @@
 <hr>
 
 <section id="about">
-	<div class="container">
-		<h2>About Me</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae aperiam, perspiciatis architecto quas, cum dolorum fuga porro ullam nihil sed quo molestias assumenda nostrum labore quam voluptas, maiores doloribus. Dolor fugiat ea, nesciunt magni veniam amet, ratione ex doloremque alias at. Incidunt debitis delectus obcaecati, quod, in mollitia deserunt perferendis adipisci sunt earum reprehenderit voluptate. Cum repellendus odit, neque reiciendis nam! Magnam voluptatibus dolor laborum doloribus possimus vitae aspernatur delectus obcaecati quidem eum quis eos, veniam totam enim ut dolorem, nesciunt quae quibusdam. Placeat in voluptates quo quisquam, recusandae illo ad tenetur, voluptatum laborum. Repellendus veritatis perspiciatis quia fuga nihil?</p>
+	<div class="container p-5">
+		<h2 class="text-center mb-5">About Me</h2>
+		<div class="row justify-content-around" id="summary">
+			<img src="img/profile.jpg" alt="" class="col-5">
+			<p class="col-6 align-self-center"><span><i class="fas fa-angle-double-down"></i></i></span><br>Coding Enthusiast, eager to learn, knowledge hungry, positive and self-motivated individual who is thrilled to be starting a new career in the technology industry. Looking for an entry-level front-end developer position to utilize skills of Javascript, Vue.Js, CSS, and HTML Bootstrap <br><span><i class="fas fa-angle-double-up"></i></span></p>
+		</div>
 	</div>
 </section>
 
@@ -61,73 +67,61 @@
 
 <section id="projects">
 	<div class="container">
-		<h2>My Projects</h2>
+		<h2 class="mb-5 text-center">Portfolio</h2>
 		<div class="row justify-content-around">
-			<div class="card col-3 mb-4">
-                <img class="card-img-top" src="img/pattern1.jpeg" alt="">
+			<div class="card text-center col-3 mb-4">
+                <img class="card-img-top mx-auto" src="img/quiz.jpg" alt="">
               	<div class="card-body">
-                    <h5 class="card-title">First Thing</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                    Veniam, dolorum facere?
-            		Commodi, ut. Et, itaque quam!</p>
-                    <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                    <h5 class="card-title">Quiz App</h5>
+                    <p class="card-text">JavaScript, HTML, CSS</p>
+                    <a href="https://bengyphan.github.io/pokemonQuiz/" class="btn btn-outline-success btn-sm">Check it out!</a>
                     <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                 </div>
             </div>
-            <div class="card col-3 mb-4">
-                <img class="card-img-top" src="img/pattern1.jpeg" alt="">
+            <div class="card text-center col-3 mb-4">
+                <img class="card-img-top mx-auto" src="img/clock.jpg" alt="">
               	<div class="card-body">
-                    <h5 class="card-title">First Thing</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                    Veniam, dolorum facere?
-            		Commodi, ut. Et, itaque quam!</p>
-                    <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                    <h5 class="card-title">Clock App</h5>
+                    <p class="card-text">JavaScript, HTML, CSS</p>
+                    <a href="https://bengyphan.github.io/clockApp/" class="btn btn-outline-success btn-sm">Check it out!</a>
                     <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                 </div>
             </div>
-            <div class="card col-3 mb-4">
-                <img class="card-img-top" src="img/pattern1.jpeg" alt="">
+            <div class="card text-center col-3 mb-4">
+                <img class="card-img-top mx-auto" src="img/scoreKeeper.jpg" alt="">
               	<div class="card-body">
-                    <h5 class="card-title">First Thing</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                    Veniam, dolorum facere?
-            		Commodi, ut. Et, itaque quam!</p>
-                    <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                    <h5 class="card-title">Scorekeeper App</h5>
+                    <p class="card-text">JavaScript, HTML, CSS</p>
+                    <a href="https://bengyphan.github.io/scoreKeeper/" class="btn btn-outline-success btn-sm">Check it out!</a>
                     <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                 </div>
             </div>
 		</div>
 		<div class="row justify-content-around">
-			<div class="card col-3 mb-4">
-                <img class="card-img-top" src="img/pattern1.jpeg" alt="">
+			<div class="card text-center col-3 mb-4">
+                <img class="card-img-top mx-auto" src="img/candy.jpg" alt="">
               	<div class="card-body">
-                    <h5 class="card-title">First Thing</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                    Veniam, dolorum facere?
-            		Commodi, ut. Et, itaque quam!</p>
-                    <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                    <h5 class="card-title">Museum of Candy</h5>
+                    <p class="card-text">Bootstrap 4, HTML, CSS</p>
+                    <a href="https://bengyphan.github.io/museumOfCandy/" class="btn btn-outline-success btn-sm">Check it Out!</a>
+                    <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                </div>
+            </div>
+            <div class="card text-center col-3 mb-4">
+                <img class="card-img-top mx-auto" src="img/todo.jpg" alt="">
+              	<div class="card-body">
+                    <h5 class="card-title">To Do App</h5>
+                    <p class="card-text">VueJs, HTML, CSS</p>
+                    <a href="" class="btn btn-outline-success btn-sm">Check it out!</a>
                     <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                 </div>
             </div>
             <div class="card col-3 mb-4">
-                <img class="card-img-top" src="img/pattern1.jpeg" alt="">
+                <img class="card-img-top" src="img/crime.jpeg" alt="">
               	<div class="card-body">
-                    <h5 class="card-title">First Thing</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                    Veniam, dolorum facere?
-            		Commodi, ut. Et, itaque quam!</p>
-                    <a href="" class="btn btn-outline-success btn-sm">Download</a>
-                    <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
-                </div>
-            </div>
-            <div class="card col-3 mb-4">
-                <img class="card-img-top" src="img/pattern1.jpeg" alt="">
-              	<div class="card-body">
-                    <h5 class="card-title">First Thing</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti quam magnam!
-                    Veniam, dolorum facere?
-            		Commodi, ut. Et, itaque quam!</p>
-                    <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                    <h5 class="card-title">Crime Report App</h5>
+                    <p class="card-text">API, JavaScript</p>
+                    <a href="" class="btn btn-outline-success btn-sm">check it out!</a>
                     <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                 </div>
             </div>
@@ -144,11 +138,11 @@
 			<form class="col-5" action="">
 				<div class="form-group">
 					<label for="name">Name</label>
-					<input class="form-control" type="text" placeholder="Your Name">
+					<input class="form-control mb-2" type="text" placeholder="Your Name">
 					<label for="email">Email</label>
-					<input class="form-control" type="text" placeholder="Enter email">
-					<input class="form-control" type="text" placeholder="Subject">
-					<textarea class="form-control" name="textData" id="userQuery" cols="30" rows="10"></textarea>
+					<input class="form-control mb-2" type="text" placeholder="Enter email">
+					<input class="form-control mb-2" type="text" placeholder="Subject">
+					<textarea class="form-control" name="textData" placeholder="Message" id="userQuery" cols="30" rows="10"></textarea>
 				</div>
 				
 
@@ -156,6 +150,17 @@
 		</div>
 	</div>
 </section>
+
+<hr>
+
+<footer>
+	<p class="text-center">Copyright &#169 Bengy Phan | Front-end Developer</p>
+	<div class="mediaLinks">
+		<a href="https://github.com/bengyphan"><i class="fab fa-github-square"></i></a>
+		<a href="https://www.linkedin.com/in/bengy-phan-aa3674169/"><i class="fab fa-linkedin"></i></a>
+		<a href="mailto:bengyphan@gmail.com"><i class="fas fa-envelope"></i></a>
+	</div>
+</footer>
 
 	
 

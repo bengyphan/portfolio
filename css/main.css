@@ -1,3 +1,130 @@
-#myNavbar {
-	width: 100px;
+div.navbar {
+	height:73px;
+	background: #fff;
+}
+div.burger {
+	height: 35px; 
+	width: 40px;
+	position: absolute;
+	top: 20px; 
+	right: 21px;
+	cursor: pointer;
+	background: #1b8d80;
+	border-radius: 3px;
+	margin:auto;	
+}
+div.burger.open {
+	position: absolute;
+	top: 20px;
+	z-index: 5;
+}
+div.x, div.y, div.z {
+	width:26px;
+	height: 3px;
+	border-radius: 2px;
+	margin: auto;
+	background: #fff;
+	position: relative;
+}
+div.x{top:7px;}
+div.y{top:14px;}
+div.z{top:21px;}
+div.close{
+	top: 20px;
+	background:black;
+	position: absolute;
+	transition: all 70ms ease-out;
+}
+div.rotate45{
+	transform: rotate(45deg); 
+	transition: all 100ms ease-out;					
+}
+div.rotate135{
+	transform: rotate(135deg); 
+	transition: all 100ms ease-out;					
+}
+div.menu {
+	height: 750px;
+	width: 0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-align: center;
+	background: #1b8d80;
+}
+div.menu.open {
+	width: 320px;
+	transition: width 0.5s;
+}
+div.menu ul {
+	margin-top: 100px;
+}
+div.menu ul li {
+	list-style: none;
+	font-size: 21px;
+	margin: 30px;
+}
+div.menu ul li a {
+	color:#fff;
+	text-transform:uppercase;
+	text-decoration:none;	
+	letter-spacing:3px;			
+}
+h2 {
+	color: #1b8d80;
+}
+#profile {
+	height: 250px;
+	width: 0px;
+}
+#profile.open {
+	width: 250px;
+}
+
+/*jumbotron*/
+div.jumbotron {
+	background-image: url("../img/background.jpg") 
+}
+div.jumbotron h1, div.jumbotron p {
+	color: #fff;
+	text-shadow: 0 0 20px #fff;
+}
+#about img {
+	height: 500px;
+}
+.card img {
+	height: 200px;
+	width: 200px;
+}
+#summary span {
+	position: relative;
+	font-size: 30px;
+	left: 225px;
+	color: #1b8d80;
+}
+
+footer div.mediaLinks {
+	position: relative;
+	float: right;
+	margin: 0 100px;
+	bottom: 20px;
+}
+footer div.mediaLinks a {
+	font-size: 50px;
+	color: #1b8d80;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  overflow: auto;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
 }
